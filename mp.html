@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <h1>Hello</h1> -->
+    <!-- <form action="#" onsubmit="onsignup()">
+        <h3>Book a call</h3>
+    <p>Book a call slot and our representative will call you within 1hr of selected time </p>
+    <hr width="480px">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="username" value="text"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="useremail" value="12345@gmail" > <br>
+    <label for="phone">Phone:</label><br>
+    <input type="number" id="phone" name="userphone" value="1234567890"><br>
+    <label for="">Time for call:</label><br><br>
+    <input type="date" name="userdate" value="k" style="width:46%; float: left; margin-left: 6px;padding: 1.5px;"> 
+    <input type="time" style="width: 48%;float: right;margin-right: 4px;"><br>
+    <input type="submit" id="k" value=" GET A CALL">
+</form> -->
+<!-- 
+<form id="form">
+    <h3 id="headr">FORM</h3>
+    <h4 id="empty"></h4>
+    <label>Nmae:</label><br>
+    <input type="text" id="name" >
+    <label for="">Email</label><br>
+    <input type="email" id="email" required><br>
+    <input type="submit" class="btn" value="SUBMIT">
+</form> -->
+
+<div class="container">
+    <div id="main" class="card card-body">
+     <h2 class="title">Add Items</h2>
+     <form class="form-inline mb-3">
+       <input type="text" class="form-control mr-2">
+       <input type="submit" class="btn btn-dark" value="Submit">
+     </form>
+     <h2 class="title">Items</h2>
+     <ul id="items" class="list-group">
+       <li class="list-group-item">Item 1</li>
+       <li class="list-group-item">Item 2</li>
+       <li class="list-group-item">Item 3</li>
+       <li class="list-group-item">Item 4</li>
+     </ul>
+    </div>
+   </div>
+</body>
+<script>
+//  function onsignup(){
+//     let name = document.getElementById("name").value;
+//     let gmail = document.getElementById("email").value;
+//     let phone = document.getElementById("phone").value;
+//     let date = document.getElementById("k").value
+//    console.log(name,gmail,phone,date)
+    
+//  }
+ 
+// let form = document.querySelector("#form");
+// let name = document.querySelector("#name");
+// let email = document.querySelector("#email");
+// let empty = document.querySelector("#empty");
+
+// form.addEventListener('submit',onsubmit);
+// function onsubmit(e){
+//     e.preventDefault();
+//     if(name.value == "" || email.value == ""){
+//         empty.innerHTML = "Please Enter value"
+//         setTimeout(()=> empty.remove(), 2000)
+//     }else{
+//         console.log(name.value,email.value);
+
+//        //turn empty option
+//        email.value = "";
+//        name.value = ""
+//     }
+// }
+
+
+
+// let btn = document.querySelector('.btn');
+// btn.addEventListener('click',(e)=>{
+//   e.preventDefault();
+//   let body = document.querySelector('body');
+//   body.style.backgroundColor = 'white';
+  
+// });
+
+// btn.addEventListener('mouseover',(e)=>{
+//   e.preventDefault();
+//   let body = document.querySelector('body');
+//   body.style.backgroundColor = 'red';
+
+// });
+// btn.addEventListener('mouseout',(e)=>{
+//   e.preventDefault();
+//   let body = document.querySelector('body');
+//   body.style.backgroundColor = 'red';
+  
+// });
+// function change(){
+
+// }
+
+//  first way ..
+// console.log(document.title)
+// let t = document.title = "new title"
+// console.log(document.title)
+// console.log(document)
+// console.log(document.all[8])
+// console.log(document.)
+
+// second way  to extract id
+// let h = document.getElementById('headr');
+// h.style.borderBottom = '2px solid black'
+// h.textContent = "ADD ITEM";
+// h.style.color = "green";
+// h.style.fontSize = 'bold'
+// console.log(h)
+// 
+
+// let list = document.getElementsByTagName("li");
+// list[2].style.backgroundColor = 'green'
+
+// for(let i =0; i<list.length; i++){
+//     list[i].style.fontWeight = 'bold';
+//     list[i].style.color = 'yellow'
+// }
+// console.log(list[2])
+//  let second = document.querySelector(".list-group-item:nth-child(2)");
+//  second.style.backgroundColor = 'green'
+//  let third = document.querySelector(".list-group-item:nth-child(3)");
+//  third.style.display = 'none'
+//  console.log(second);
+
+
+// let odd = document.querySelector("#items");
+// for(let i = 0; i<odd.length; i++){
+//     odd[i].style.backgroundColor = "green"
+// }
+// second[1].style.color = 'green';
+
+
+let newDiv =document.createElement('div');
+newDiv.className = 'newClass'
+newDiv.id = 'newId';
+newDiv.setAttribute('title','newTitle');
+let h = document.createTextNode('hello world');
+ newDiv.appendChild(h)
+
+let ul = document.querySelector("ul");
+let li = document.querySelector('li')
+
+// console.log(container)
+console.log();
+ul.insertBefore(newDiv,li)
+// let h2 = odd.previousElementSibling.previousElementSibling.previousElementSibling;
+// console.log(newDiv);
+
+
+</script>
+</html>
